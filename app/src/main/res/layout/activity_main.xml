@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images2"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fontFamily="sans-serif-condensed"
+    tools:context="com.example.android.healthylivingexample.MainActivity">
+
+    <TextView
+        android:id="@+id/health_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Check"
+        android:paddingBottom="30dp"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Do you have a supportive Social Network?"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="#2980b9"
+        android:layout_below="@id/health_check"
+        android:textColor="#000"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#00BCD4"
+        android:text="Y e s"
+        android:onClick="yes"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:text=" S o m e t i m e s "
+        android:onClick="sometimes"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@+id/button"
+        android:textColor="#FFF"
+        android:background="#114F7F"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/button2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/button2"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="#B26A00"
+        android:text="N O"
+        android:onClick="no"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Health Score"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:textColor="#FFF"
+        android:id="@+id/displayMessage"
+        android:layout_gravity="center"/>
+</LinearLayout>
